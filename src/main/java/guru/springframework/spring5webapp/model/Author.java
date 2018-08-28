@@ -29,55 +29,55 @@ public class Author
     
     }
     
-    private Author(String firstName, String lastName, Set<Book> books)
+    public Author(String firstName, String lastName, Set<Book> books)
     {
         this.firstName = firstName;
         this.lastName = lastName;
         this.books = books;
     }
-    
-    private Author(String firstName, String lastName)
+
+    public Author(String firstName, String lastName)
     {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    
-    private Long getId()
+
+    public Long getId()
     {
         return id;
     }
-    
-    private void setId(Long id)
+
+    public void setId(Long id)
     {
         this.id = id;
     }
-    
-    private String getFirstName()
+
+    public String getFirstName()
     {
         return firstName;
     }
-    
-    private void setFirstName(String firstName)
+
+    public void setFirstName(String firstName)
     {
         this.firstName = firstName;
     }
-    
-    private String getLastName()
+
+    public String getLastName()
     {
         return lastName;
     }
-    
-    private void setLastName(String lastName)
+
+    public void setLastName(String lastName)
     {
         this.lastName = lastName;
     }
-    
-    private Set<Book> getBooks()
+
+    public Set<Book> getBooks()
     {
         return books;
     }
-    
-    private void setBooks(Set<Book> books)
+
+    public void setBooks(Set<Book> books)
     {
         this.books = books;
     }

@@ -24,72 +24,72 @@ public class Book
     
     @ManyToMany(mappedBy = "books")
     private Set<Author> authors = new HashSet<>();
-    
-    private Book()
+
+    public Book()
     {
     }
-    
-    private Book(String title, String isbn, String publisher)
+
+    public Book(String title, String isbn, String publisher)
     {
         this.title = title;
         this.isbn = isbn;
         this.publisher = publisher;
     }
-    
-    private Book(String title, String isbn, String publisher, Set<Author> authors)
+
+    public Book(String title, String isbn, String publisher, Set<Author> authors)
     {
         this.title = title;
         this.isbn = isbn;
         this.publisher = publisher;
         this.authors = authors;
     }
-    
-    private Long getId()
+
+    public Long getId()
     {
         return id;
     }
-    
-    private void setId(Long id)
+
+    public void setId(Long id)
     {
         this.id = id;
     }
-    
-    private String getTitle()
+
+    public String getTitle()
     {
         return title;
     }
-    
-    private void setTitle(String title)
+
+    public void setTitle(String title)
     {
         this.title = title;
     }
-    
-    private String getIsbn()
+
+    public String getIsbn()
     {
         return isbn;
     }
-    
-    private void setIsbn(String isbn)
+
+    public void setIsbn(String isbn)
     {
         this.isbn = isbn;
     }
-    
-    private String getPublisher()
+
+    public String getPublisher()
     {
         return publisher;
     }
-    
-    private void setPublisher(String publisher)
+
+    public void setPublisher(String publisher)
     {
         this.publisher = publisher;
     }
-    
-    private Set<Author> getAuthors()
+
+    public Set<Author> getAuthors()
     {
         return authors;
     }
-    
-    private void setAuthors(Set<Author> authors)
+
+    public void setAuthors(Set<Author> authors)
     {
         this.authors = authors;
     }
