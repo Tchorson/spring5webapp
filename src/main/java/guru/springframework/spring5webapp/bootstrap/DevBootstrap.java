@@ -32,7 +32,7 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
         publisherRepository.save(unknown);
 
         Author eric = new Author("Eric", "Evans");
-        Book ddd = new Book("Domain Driven Design", "3333", adrian);
+        Book ddd = new Book("DDD", "3333", adrian);
         ddd.getAuthors().add(eric);
         eric.getBooks().add(ddd);
 
